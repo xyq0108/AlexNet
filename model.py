@@ -37,10 +37,10 @@ class AlexNet(nn.Module):
         x = self.fc3(x)
         return x
 
-if __name__ == '__main__':
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    #模型实例化，放到设备中
-    model = AlexNet().to(device)
-    print(summary(model, input_size=(1, 227, 227)))
+# if __name__ == '__main__':
+#     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+#     #模型实例化，放到设备中
+#     model = AlexNet().to(device)
+#     print(summary(model, input_size=(1, 227, 227)))
 
 
